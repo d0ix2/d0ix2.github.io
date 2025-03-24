@@ -7,8 +7,8 @@ categories:
 tags:
   - [nichijo, JPT]
 
-date: 2025-03-25
-last_modified_at: 2025-03-25
+date: 2025-03-24
+last_modified_at: 2025-03-24
 
 toc: true
 toc_sticky: true
