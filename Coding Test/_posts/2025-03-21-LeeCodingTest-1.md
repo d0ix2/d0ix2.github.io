@@ -1,5 +1,6 @@
 ---
 title: "[이코테 파이썬] 부록 A 내용 정리"
+excerpt: "<이것이 취업을 위한 코딩 테스트다 - 파이썬 편>의 부록 A를 읽고 정리하였습니다."
 
 categories:
   - Coding Test

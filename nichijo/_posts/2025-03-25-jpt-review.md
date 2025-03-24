@@ -1,5 +1,6 @@
 ---
 title: "[JPT] 도쿄에서 JPT 시험 응시한 후기"
+excerpt: "일본 도쿄에서 제396회 JPT 시험에 응시한 후기입니다."
 
 categories:
   - nichijo
