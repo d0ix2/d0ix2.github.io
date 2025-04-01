@@ -14,6 +14,8 @@ toc: true
 toc_sticky: true
 ---
 
+<br />
+
 # 부록 A. 코딩 테스트를 위한 파이썬 문법
 
 ## 1. 자료형
