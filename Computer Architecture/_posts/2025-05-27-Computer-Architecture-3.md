@@ -42,7 +42,7 @@ toc_sticky: true
 
 - 전기적으로 동작하는 스위치
 
-	![relay-01](/Computer-Architecture/img/computer-architecture-3-01.png)
+	![relay-01](/img/computer-architecture-3-01.png)
 
 - 위의 그림에서,
 	1. 평소에는 전극 부분이 스프링(용수철) 구조로 되어 있어 OFF 상태
