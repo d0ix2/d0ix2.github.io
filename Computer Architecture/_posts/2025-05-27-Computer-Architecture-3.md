@@ -34,7 +34,6 @@ toc_sticky: true
 - 주의
 	- 이 자료에서 설명하는 N형/P형을 사용한 방식은 이후 CMOS의 설명을 이해하기 쉽게 하기 위함
 	- 실제 사용되었던 릴레이 계산기에서는 조금 더 효율적인 다른 방식이 사용되었음
-	- 
 
 <br/>
 
@@ -42,7 +41,7 @@ toc_sticky: true
 
 - 전기적으로 동작하는 스위치
 
-	![relay-01](/img/computer-architecture-3-01.png)
+	![relay-01](/attachments/computer-architecture-3-01.png)
 
 - 위의 그림에서,
 	1. 평소에는 전극 부분이 스프링(용수철) 구조로 되어 있어 OFF 상태
@@ -52,7 +51,7 @@ toc_sticky: true
 	5. S와 D가 연결되어 ON 상태가 됨
 - 알아보기 어려우므로, 앞으로는 아래의 그림과 같이 나타내며 'G~B 사이에 전압을 걸면 S~D가 ON'과 같이 표기
 
-	![relay-02](./img/computer-architecture-3-02.png)
+	![relay-02](/attachments/computer-architecture-3-02.png)
 
 ### VDD과 GND
 
@@ -68,7 +67,7 @@ toc_sticky: true
 	- 어디에도 연결되어 있지 않은 신호선의 전위는 Z
 - 이때 Z는 고임피던스 High Impedance 상태를 의미하며, 회로상에서 해당 선이 입출력을 하지 않고 떠 있는 상태를 나타냄
 
-	![vdd-gnd](./img/computer-architecture-3-03.png)
+	![vdd-gnd](/attachments/computer-architecture-3-03.png)
 
 - VDD와 GND 양쪽을 동시에 직접 연결하는 일은 없음
 	- 실제 연결할 경우 VDD에서 GND로 큰 전류가 흘러 회로가 망가짐 -> 이를 쇼트(단락 短絡)라고 함
@@ -91,7 +90,7 @@ toc_sticky: true
 			- G~B 사이에 전압차가 존재하기 때문에 코일이 동작
 		- 즉 G가 0일 때 OFF, G가 1일 때 ON
 
-	![relay-n](./img/computer-architecture-3-04.png)
+	![relay-n](/attachments/computer-architecture-3-04.png)
 
 - **P형 릴레이**
 	- P는 Positive의 약자
@@ -106,7 +105,7 @@ toc_sticky: true
 			- B~G 사이에 전압차가 존재하지 않기 때문에 코일이 움직이지 않음
 		- 즉 G가 0일 때 ON, G가 1일 때 OFF
 
-	![relay-p](./img/computer-architecture-3-05.png)
+	![relay-p](/attachments/computer-architecture-3-05.png)
 
 - P형과 N형의 차이 
 	- P형에서는 G가 0일 때 ON, N형에서는 G가 1일 때 ON으로 서로 반대
@@ -115,7 +114,7 @@ toc_sticky: true
 			- 흰 동그라미가 없는 N형은 1일 때 ON, 0일 때 OFF
 			- 흰 동그라미가 있으면 해당 지점에서 반전되므로, P형은 0일 때 ON
 
-	![relay-n-p](./img/computer-architecture-3-06.png)
+	![relay-n-p](/attachments/computer-architecture-3-06.png)
 
 <br/>
 
@@ -123,7 +122,7 @@ toc_sticky: true
 
 - P형과 N형을 연결해 아래와 같이 NOT 게이트를 작성하는 것이 가능함
 
-	![not-gate](./img/computer-architecture-3-07.png)
+	![not-gate](/attachments/computer-architecture-3-07.png)
 
 - 두 스위치는 반드시 반대 동작을 하게 됨
 	- P형은 입력이 0일 때 ON
@@ -141,9 +140,9 @@ toc_sticky: true
 	- 아래쪽의 N형 두 개는 직렬 연결되어 있음
 		- a와 b 양쪽 입력 모두에 1이 들어오면 두 개 모두 ON이 되어 GND가 c에 연결됨
 
-	![nand-gate-01](./img/computer-architecture-3-08.png)
+	![nand-gate-01](/attachments/computer-architecture-3-08.png)
 
-	![nand-gate-02](./img/computer-architecture-3-09.png)
+	![nand-gate-02](/attachments/computer-architecture-3-09.png)
 
 - NOT과 NAND와 AND와 OR을 작성할 수 있음
 	- AND의 입력과 출력에 NOT을 붙이면 OR을 만들 수 있음
@@ -201,7 +200,7 @@ toc_sticky: true
 		- 게이트에 O 표시가 존재
 		- 게이트를 0으로 하면 ON이 됨
 
-	![nand-gate](./img/computer-architecture-3-10.png)
+	![nand-gate](/attachments/computer-architecture-3-10.png)
 
 - CMOS: Complementary Metal-Oxide-Semiconductor
 	- CMOS는 NMOS와 PMOS의 두 종류 트랜지스터로 구성됨  
@@ -216,7 +215,7 @@ toc_sticky: true
 			- NMOS(아랫쪽)는 off 상태  
 		- 출력은 1(고전위)이 됨
 
-	![cmos-not-gate](./img/computer-architecture-3-11.png)
+	![cmos-not-gate](/attachments/computer-architecture-3-11.png)
 
 	- NAND 게이트의 예시
 		- 𝑎와 b가 모두 1(고전위)인 경우  
@@ -224,7 +223,7 @@ toc_sticky: true
 			- NMOS(아랫쪽)는 둘 다 on = GND와 연결됨  
 		- 출력은 0(저전위)이 됨
 
-	![cmos-nand-gate](./img/computer-architecture-3-12.png)
+	![cmos-nand-gate](/attachments/computer-architecture-3-12.png)
 
 	- 정리
 		- 모든 논리 게이트는 NMOS/PMOS의 조합을 이용해 구성할 수 있음
