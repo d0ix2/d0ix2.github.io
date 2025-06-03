@@ -1,6 +1,6 @@
 ---
 title: "[컴퓨터아키텍처] 4주차 수업 내용 정리"
-excerpt: "노이만형 컴퓨터, 프로그램, CPU, C언어와 기계어에 대해 정리하였습니다."
+excerpt: "논리회로, 릴레이, CMOS에 대해 정리하였습니다."
 
 tags: 
   - [Ocha, Computer Architecture]
@@ -42,7 +42,7 @@ toc_sticky: true
 
 - 전기적으로 동작하는 스위치
 
-	![relay-01](./img/computer-architecture-3-01.png)
+	![relay-01](/Computer-Architecture/img/computer-architecture-3-01.png)
 
 - 위의 그림에서,
 	1. 평소에는 전극 부분이 스프링(용수철) 구조로 되어 있어 OFF 상태
