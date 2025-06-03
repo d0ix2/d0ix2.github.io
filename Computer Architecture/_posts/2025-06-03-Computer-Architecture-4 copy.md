@@ -79,21 +79,18 @@ toc_sticky: true
 
 	![](/attachments/computer-architecture-4-03.png)
 	
-	- **명령 패치**
+	1. **명령 패치**
 		- 명령 메모리에서 명령을 읽어오는 방식
 			- 명령 메모리를 순서대로 읽기 위해, **PC는 매 사이클마다 증가**함
 			- 더해지는 4는, RISC-V에서 명령어의 크기가 **4바이트**이기 때문임
 			- 기본적으로 이 부분은 어떤 명령에서도 변하지 않는 부분임
 
-<br/>
 
 	![](/attachments/computer-architecture-4-04.png)
 
-	- **명령 디코드**
+	2. **명령 디코드**
 		- 받은 명령으로부터 레지스터 번호를 나타내는 부분의 비트를 읽어 옴
 			- 소스 `rs1`, `rs2`와 데스티네이션 `rd`
-
-<br/>
 
 	![](/attachments/computer-architecture-4-05.png)
 
@@ -101,14 +98,10 @@ toc_sticky: true
 		- 디코드로부터 얻은 레지스터 번호를 이용해 RF에 액세스
 			- 소스, 피연산자의 값을 읽어 옴
 
-<br/>
-
 	![](/attachments/computer-architecture-4-06.png)
 
 	- **실행**
 		- RF로부터 읽어 온 두 개의 값을 더함
-
-<br/>
 
 	![](/attachments/computer-architecture-4-07.png)
 
@@ -180,9 +173,9 @@ toc_sticky: true
 
 <br/>
 
-	- 각 스테이지 사이에 D-FF(주황색 사각형)을 넣는 방식
-		- WB의 쓰기에 대해서는, 레지스터 파일 자체가 클록에 맞춰 쓰기가 이루어지므로 D-FF는 불필요함
-		- 각 스테이지의 처리가 빨리 끝나더라도, 다음 클록까지는 D-FF로 신호 전달을 멈추는 방식임
+- 각 스테이지 사이에 D-FF(주황색 사각형)을 넣는 방식
+	- WB의 쓰기에 대해서는, 레지스터 파일 자체가 클록에 맞춰 쓰기가 이루어지므로 D-FF는 불필요함
+	- 각 스테이지의 처리가 빨리 끝나더라도, 다음 클록까지는 D-FF로 신호 전달을 멈추는 방식임
 
 	![](/attachments/computer-architecture-4-13.png)
 
