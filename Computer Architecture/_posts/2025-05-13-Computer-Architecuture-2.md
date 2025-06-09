@@ -178,7 +178,9 @@ toc_sticky: true
 
 	![](/attachments/computer-architecture-2-09.png)
 
-
+	- 두 개의 NOT 게이트를 루프로 연결한 회로에 의한 기억  
+		- 두 가지의 안정 상태가 존재함 → 1비트를 기억함
+	
 	- 구조
 
 		![](/attachments/computer-architecture-2-10.png)
@@ -194,9 +196,6 @@ toc_sticky: true
 			- 그 값이 다음 사이클 동안 q에서 출력됨
 
 		![](/attachments/computer-architecture-2-12.png)
-
-- 두 개의 NOT 게이트를 루프로 연결한 회로에 의한 기억  
-	- 두 가지의 안정 상태가 존재함 → 1비트를 기억함
 
 <br />
 
