@@ -118,6 +118,9 @@ toc_sticky: true
 <br />
 
 ## 조합 논리 회로
+
+![](/attachments/computer-architecture-2-01.png)
+
 - **완전성 Completeness**
 	- **완전 집합 Complete Set**
 		- 해당 조합만으로 **모든 논리 함수를 표현**할 수 있는 논리 함수의 집합
@@ -128,11 +131,17 @@ toc_sticky: true
 			- {NAND}  
 			- {NOR}
 		- 예를 들어, {AND, OR, NOT}을 조합하면 임의의 논리 함수를 구성할 수 있음
+
+		![](/attachments/computer-architecture-2-02.png)
+
 - 진리값 표를 이용해, 그에 대응하는 회로 그림을 작성할 수 있음
 
 <br />
 
 - **멀티플렉서**
+
+![](/attachments/computer-architecture-2-03.png)
+
 	- 복수 입력으로부터 하나를 선택하는 회로
 	- 다음에 의해 회로의 생성이 가능함  
 		- 2:1 멀티플렉서는 진리값표로 표현 가능함 → 회로의 작성이 가능함  
@@ -142,20 +151,47 @@ toc_sticky: true
 		2. 제어 신호에 따라 멀티플렉서를 사용하여 출력을 선택함
 	    3. 위와 같은 방식으로 분해하여 AND/OR/NOT 회로로 환원 가능함
 
+	![](/attachments/computer-architecture-2-04.png)
+
+	![](/attachments/computer-architecture-2-05.png)
+
+<br />
+
 ## 순차 논리 회로
+
+![](/attachments/computer-architecture-2-06.png)
+
 - 출력이 과거의 입력에도 의존하는 논리 회로
 	- **기억 소자(PC)**와 **조합 논리 회로**로 구성됨
 
+![](/attachments/computer-architecture-2-07.png)
+
 - 기억 소자의 예: **D-FF(Flip Flop)**
+
+	![](/attachments/computer-architecture-2-08.png)
+
+
 	- 클록의 상승 에지마다 d의 값이 샘플링됨  
 	- 그 값이 다음 사이클 동안 q에서 출력됨
+
+	![](/attachments/computer-architecture-2-09.png)
+
+
 	- 구조
+
+		![](/attachments/computer-architecture-2-10.png)
+
 		- NOT 게이트의 루프를 2단으로 연결함  
 		- 각 루프에는 멀티플렉서가 포함되어 있음
 		- 이 구조는 클록의 에지에서 기억을 갱신하기 위한 것임
+
+		![](/attachments/computer-architecture-2-11.png)
+
 		- 멀티플렉서를 전환 스위치로서 설명함  
 			- 클록의 상승 에지마다 d의 값이 샘플링됨  
 			- 그 값이 다음 사이클 동안 q에서 출력됨
+
+		![](/attachments/computer-architecture-2-12.png)
 
 - 두 개의 NOT 게이트를 루프로 연결한 회로에 의한 기억  
 	- 두 가지의 안정 상태가 존재함 → 1비트를 기억함
