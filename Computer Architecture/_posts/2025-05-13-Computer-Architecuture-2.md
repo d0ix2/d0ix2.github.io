@@ -172,13 +172,14 @@ toc_sticky: true
 
 	![](/attachments/computer-architecture-2-08.png)
 
-
-	- 클록의 상승 에지마다 d의 값이 샘플링됨  
-	- 그 값이 다음 사이클 동안 q에서 출력됨
+	- 동작
+		- 클록의 상승 에지마다 d의 값이 샘플링됨  
+		- 그 값이 다음 사이클 동안 q에서 출력됨
 
 	![](/attachments/computer-architecture-2-09.png)
 
-	- 두 개의 NOT 게이트를 루프로 연결한 회로에 의한 기억  
+	- 기억
+		- 두 개의 NOT 게이트를 루프로 연결한 회로에 의한 기억  
 		- 두 가지의 안정 상태가 존재함 → 1비트를 기억함
 	
 	- 구조
