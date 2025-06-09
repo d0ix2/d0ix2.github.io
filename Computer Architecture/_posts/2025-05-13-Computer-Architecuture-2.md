@@ -121,6 +121,8 @@ toc_sticky: true
 
 ![](/attachments/computer-architecture-2-01.png)
 
+<br />
+
 - **완전성 Completeness**
 	- **완전 집합 Complete Set**
 		- 해당 조합만으로 **모든 논리 함수를 표현**할 수 있는 논리 함수의 집합
@@ -140,7 +142,7 @@ toc_sticky: true
 
 - **멀티플렉서**
 
-![](/attachments/computer-architecture-2-03.png)
+	![](/attachments/computer-architecture-2-03.png)
 
 	- 복수 입력으로부터 하나를 선택하는 회로
 	- 다음에 의해 회로의 생성이 가능함  
