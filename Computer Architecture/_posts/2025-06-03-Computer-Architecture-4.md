@@ -284,7 +284,7 @@ toc_sticky: true
 	- D-FF의 동작
 		1. 블록 신호가 Low
 
-		![](/attachments/computer-architecture-4-18.png)
+			![](/attachments/computer-architecture-4-18.png)
 
 			- 왼쪽 루프
 				- d 입력의 변화에 따라 인버터의 상태가 수시로 전환됨
@@ -294,7 +294,7 @@ toc_sticky: true
 
 		2. 블록 신호의 상승
 
-		![](/attachments/computer-architecture-4-19.png)
+			![](/attachments/computer-architecture-4-19.png)
 
 			- 왼쪽 루프
 				- d와 차단되어 루프가 형성됨
@@ -304,7 +304,7 @@ toc_sticky: true
 
 		3. 블록 신호가 High
 
-		![](/attachments/computer-architecture-4-20.png)
+			![](/attachments/computer-architecture-4-20.png)
 
 			- 왼쪽 루프
 				- 클록이 상승하기 직전의 d 값을 계속 출력함
@@ -313,7 +313,7 @@ toc_sticky: true
 
 		4. 블록 신호가 하강
 
-		![](/attachments/computer-architecture-4-21.png)
+			![](/attachments/computer-architecture-4-21.png)
 
 			- 왼쪽 루프
 				- 루프가 해제됨
