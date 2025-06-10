@@ -146,7 +146,7 @@ toc_sticky: true
 
 	![nand-gate-02](/attachments/computer-architecture-3-09.png)
 
-- NOT과 NAND와 AND와 OR을 작성할 수 있음
+- NOT과 NAND로부터 AND와 OR을 작성할 수 있음
 	- AND의 입력과 출력에 NOT을 붙이면 OR을 만들 수 있음
 		- 드모르간의 정리: `NOT(a OR b) = NOT(a) AND NOT(b)`
 		- 양변에 NOT을 적용하면: `a OR b = NOT(NOT(a) AND NOT(b))`
